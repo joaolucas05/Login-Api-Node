@@ -1,29 +1,34 @@
 {
-  "name": "login-api",
+  "name": "sistema",
   "version": "1.0.0",
-  "description": "Login api, using jwt and JOI",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon server.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon -e ts,json,mustache src/server.ts",
+    "watch-ts": "tsc -w"
   },
-  "author": "João Lucas",
+  "author": "Joao Lucas",
   "license": "ISC",
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.2",
+    "@types/express": "^4.17.12",
+    "@types/express-session": "^1.17.4",
+    "@types/jsonwebtoken": "^8.5.4",
+    "@types/mustache-express": "^1.2.1",
+    "@types/node": "^15.12.5",
+    "@types/passport": "^1.0.7",
+    "@types/validator": "^13.6.0"
+  },
   "dependencies": {
-    "bcrypt": "^5.0.1",
     "body-parser": "^1.19.0",
     "cookie-parser": "^1.4.5",
-    "cors": "^2.8.5",
-    "dotenv-safe": "^8.2.0",
+    "dotenv": "^10.0.0",
     "express": "^4.17.1",
-    "express-async-handler": "^1.1.4",
-    "express-validation": "^3.0.8",
-    "express-validator": "^6.11.1",
-    "joi": "^17.4.0",
+    "express-session": "^1.17.2",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.12.2",
-    "path": "^0.12.7"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.7"
+    "mustache-express": "^1.3.1",
+    "passport": "^0.4.1",
+    "validator": "^13.6.0"
   }
 }
